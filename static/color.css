@@ -1,0 +1,10 @@
+/* Bleu */
+a {color: #007da4;}
+.date {background-color: #007da4; color: #fff;}
+#thumbs li.selected .overlay {background-color: #007da4;}
+.control {background-color: #007da4; color: #fff;}
+.pagination .photo-index span {color: #0a4c60;}
+#thumbs li.selected a {background-color: #007da4;}
+
+.pagination .prev {background: url(img/lil-prev.png) top center no-repeat;}
+.pagination .next {background: url(img/lil-next.png) top center no-repeat;}

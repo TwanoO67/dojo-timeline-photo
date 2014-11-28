@@ -1,0 +1,47 @@
+TODO:
+    -chercher les url absolu et remplacer par du relatif ou fichier de conf (avec globalSiteConf )
+    -forcer l'ordre des photos, par date, par nom de fichier, ou manuel par Dnd
+    - l'edition d'une photo doit etre centré par rapport à la photo dans la liste (pour ne pas avoir a recliquer sur les liste trop longue)
+    - à l'enregistrement mettre une notification pour prévenir que ça a réussi
+    - vérifier l'enregistrement des propriété (problème de innerHTML)
+    - faire un choix automatique de la miniature si pas définie, et ne pas montrer ce champs a la création de l'album
+
+    -conserver une version HD, possibilité de la rendre payante, prix configurable, compte paypal
+    -ajouter des icon de http://iconmonstr.com/
+	- "     afficher les liens de pages seulement au hover
+	-gerer la suppression dans la sharezone 
+	-prevenir quand des elements attende dans la sharezone (puis verifier regulierement)
+    -script de connexion
+	-ShareZone: probleme d'upload puis d'enregistrement du store
+	-corriger le Load sur un store neuf (de la sharezone)
+	-corriger la suppression des images dont on est l'auteur
+    - miniature à cacher car pas d'image dans les propriétés
+    - suppression des boutons 'sauvegarder' dans eventsview
+    -ajouter les miniatures dans le FO de timeline
+    -attention a l'upload dans un fichier tmp qui ne marche plus
+    -ajouter le nomdu fichier .jpg dans la référence, puis l'objectif et l'exposition dans la légende
+    -ajouter un zoom plein écran du FO sur le clique de la timeline
+    -ajouter une dropzone pour la miniature de l'album
+    -trier les photos par ordre chronologique (depuis le bo)
+    -les textes vides cassent l'affichage FO
+    
+    -test des variables vides (notamment titre dans les propriétés)
+    -prévenir quand un fichier existe déja ou générer des nom incremental
+ 
+	-choisir l'illustration de l'album dans la liste des images existantes à revoir
+	-suppression d'un album (et des fichiers sur le serveur, en deplacant dans archive)
+
+    -placer les images sur une carte google map avec les gps exif
+    -icone du bouton sauvegarder dans l'even edit
+    -icone dans la liste unit, indiquant si image, youtube, twitter ou rien
+
+    -finir l'upload d'image, permettre la suppression du serveur, proposer le redimensionnement (taille max de fichier plus grande si redimensionnement)
+  
+    -indiquer quand l'enregistrement s'est bien passé
+    -proposer d'importer/exporter le fichier json
+    -proposer de telecharger le zip de l'album
+    -ajouter une page admin, permettant de changer les parametres du front (style timeline ou portfolio, ordre de tri, possibilité de telechargement, watermark,rendre un album privée, taille des images etc...)
+    -commentaire avec compte facebook?
+    -mot de passe de connexion, avec compte, pour liste d'album / user
+    -sauvegarde automatique de l'état en cours du store (en cas de plantage, toute les minutes par exemple)
+    -deplacer le fichier json et image dans un dossier archive lors de la suppression

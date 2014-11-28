@@ -1,0 +1,11 @@
+<div style='cursor:pointer;' title="${album.titre}" ><!-- AW: toujours laisser une div de premier niveau pour le surclassage TemplateMixin -->
+	<div data-dojo-attach-point='polaroidDisplay'>
+	    <figure>
+	        <img src='${album.image}' width='200' style="max-height: 150px;" alt='' />
+	    	<figcaption style="text-overflow:ellipsis; height: 25px; overflow: hidden; white-space: nowrap;" >(${album.count}) ${album.titre}</figcaption>
+	    </figure>
+	</div>
+	<div data-dojo-attach-point='listeDisplay' >
+		${album.titre}
+	</div>
+</div>

@@ -1,0 +1,45 @@
+<div><!-- AW: toujours laisser une div de premier niveau pour le surclassage TemplateMixin -->
+	<link rel="stylesheet" type="text/css" href="./js/custom/view/css/EventsView.css" />
+	<div data-dojo-type='dijit/form/Button' data-dojo-attach-point='btnBackAlbums'>
+    	${STRING.ALBUM_BACK_TO_ALBUMS}
+    </div>
+    
+    <div data-dojo-type='dijit/form/Button' data-dojo-attach-point='btnProperty'>
+    	${STRING.ALBUM_PROPERTIES}
+    </div>
+    
+    <div data-dojo-type='dijit/form/Button' data-dojo-attach-point='btnSaveAlbum'>
+    	${STRING.ALBUM_SAVE_THIS_ALBUM}
+    </div>
+    
+    <div data-dojo-type='dijit/form/Button' data-dojo-attach-point='btnDeleteAlbum'>
+    	${STRING.ALBUM_DELETE_THIS_ALBUM}
+    </div>
+    
+    <div data-dojo-type='dijit/form/Button' data-dojo-attach-point='btnSeeOnline'>
+    	${STRING.ALBUM_SEE_ONLINE}
+    </div>
+    
+    <div data-dojo-type='dijit/form/Button' data-dojo-attach-point='btnShareZone'>
+    	${STRING.ALBUM_SHARE_ZONE}
+    </div>
+    
+    <hr />
+    <div class='main' >
+    
+    	<div class='center'>
+	    	${STRING.ALBUM}: <span data-dojo-attach-point='divAlbumName' ></span>
+	    
+		    <div data-dojo-attach-point='albumDropzone' class='album_dropzone'>
+		     	   ${STRING.ALBUM_DROP_IMAGES} <br/>
+		     	   ${STRING.ALBUM_ADD_TO_ALBUM}
+		    </div>
+		     	
+		     <ul data-dojo-attach-point="listeUpload" class='liste_upload'></ul> 
+		    
+		    <div data-dojo-attach-point='holder' ></div>
+    	</div>
+    	<div class='right' data-dojo-attach-point='rightZone' style='display:none'></div>
+    </div>
+    
+</div>

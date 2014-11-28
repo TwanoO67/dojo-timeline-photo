@@ -1,0 +1,35 @@
+<div><!-- AW: toujours laisser une div de premier niveau pour le surclassage TemplateMixin -->
+	<link rel="stylesheet" type="text/css" href="./js/custom/view/css/ShareZoneView.css" />
+	<h1>Zone de partage</h1>
+	<hr/>
+	
+    <div class='main' >
+    	<div class='center' data-dojo-attach-point='divAccueil'>
+			Vous avez été invité à partager vos photos dans l'album "<div data-dojo-attach-point='titleAccueil' class='titre'></div>"<br/>
+			
+			Merci d'indiquer un nom et email pour que le créateur de l'album puisse vous reconnaitre:<br/>
+			<br/>
+			Nom: <div data-dojo-attach-point="inputName" 
+			data-dojo-type="dijit.form.TextBox" ></div><br/>
+			<br/>
+			Email: <div data-dojo-attach-point="inputEmail" 
+			data-dojo-type="dijit.form.TextBox" ></div><br/>
+			<br/>
+			<input type='button' data-dojo-type='dijit/form/Button' data-dojo-attach-point="btnOk" label='Ok'/>
+    	</div>
+    	<div class='center' data-dojo-attach-point='divPrincipal' style='display:none'>
+	    	${STRING.ALBUM}: <span data-dojo-attach-point='divAlbumName' ></span>
+	    
+		    <div data-dojo-attach-point='albumDropzone' class='album_dropzone'>
+		     	   ${STRING.ALBUM_DROP_IMAGES} <br/>
+		     	   ${STRING.ALBUM_ADD_TO_ALBUM}
+		    </div>
+		     	
+		     <ul data-dojo-attach-point="listeUpload" class='liste_upload'></ul> 
+		    
+		    <div data-dojo-attach-point='holder' ></div>
+    	</div>
+    	<div class='right' data-dojo-attach-point='rightZone' style='display:none'></div>
+    </div>
+    
+</div>

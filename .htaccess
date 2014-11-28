@@ -1,0 +1,19 @@
+SetEnv PHP_VER 5_4
+
+<IfModule mod_rewrite.c>
+
+    RewriteEngine on
+    RewriteBase /
+    
+    #REDIRECTION DES /FO vers la home
+    #RewriteRule ^FO / [R=301]
+    
+    #REDIRECTION POUR LA HOME
+    RewriteRule ^$ /FO/index.php [QSA,L]
+    
+    #REDIRECTION POUR LES ALBUMS
+    RewriteRule ^album/([^\/]*)$ /FO/album.php?file_name=$1.json [QSA,L]
+    RewriteRule ^album/([^\/]*)/([^\/]*) /FO/album.php?file_name=$1.json&page=$2 [QSA,L]
+
+    RewriteRule ^zip/([^\/]*) /FO/zip.php?file_name=$1.json [QSA,L]
+</IfModule>

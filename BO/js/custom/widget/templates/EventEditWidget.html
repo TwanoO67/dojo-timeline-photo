@@ -1,0 +1,60 @@
+<div ><!-- AW: toujours laisser une div de premier niveau pour le surclassage TemplateMixin -->
+<form id='event_edit' class='event_edit'>
+	<input type='hidden' value='${index}' name='index' />
+    
+    <div data-dojo-type='dijit/form/Button' data-dojo-attach-point="attach_save">
+    	${STRING.SAVE}
+    </div>
+    
+    <div data-dojo-type='dijit/form/Button' data-dojo-attach-point="attach_delete">
+    	${STRING.DELETE}
+    </div>
+	
+	<br/>
+	
+	<label for='asset_media' title="Url d'image ou lien youtube, ou twitter">${STRING.MEDIA} :</label>
+	<input class='event_input' type='hidden' name='asset_media' 
+	data-dojo-attach-point="attach_media" 
+	data-dojo-type="dijit.form.TextBox" />
+	
+	<br/>
+
+	<img data-dojo-attach-point="attach_media_img" class='dragndrop EventEdit_media_img' exif='true' style='display:none;'/>
+	<br/>
+	<br/>
+
+	<label for='startDate'>${STRING.STARTDATE} :</label>
+	<input class='event_input' type='text' name='startDate' 
+	data-dojo-attach-point="attach_startDate" 
+	data-dojo-type="custom.widget.DateAndTimeTextBox" />
+	<br/>
+	
+	<label for='headline'>${STRING.HEADLINE} :</label>
+	<input class='event_input' type='text' name='headline' 
+	data-dojo-attach-point="attach_headline" 
+	data-dojo-type="dijit.form.TextBox" />
+	<br/>
+	
+	<label for='text'>${STRING.TEXT} :</label>
+	<div class='event_input' name='text' 
+	data-dojo-attach-point="attach_text" 
+	data-dojo-type="dijit.Editor"></div>
+	
+	<br/>
+	
+	<label for='asset_credit'>${STRING.CREDIT} :</label>
+	<input class='event_input' type='text' name='asset_credit' 
+	data-dojo-attach-point="attach_credit" 
+	data-dojo-type="dijit.form.TextBox" />
+	<br/>
+	
+	<label for='asset_caption'>${STRING.CAPTION} :</label>
+	<input class='event_input' type='text' name='asset_caption' 
+	data-dojo-attach-point="attach_caption" 
+	data-dojo-type="dijit.form.TextBox" />
+	<br/>
+    
+    
+    
+</form>
+</div>

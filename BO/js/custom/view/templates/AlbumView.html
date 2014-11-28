@@ -1,0 +1,21 @@
+<div><!-- AW: toujours laisser une div de premier niveau pour le surclassage TemplateMixin -->
+    <link rel="stylesheet" type="text/css" href="./js/custom/view/css/AlbumView.css" />
+    
+   
+    <div data-dojo-type='dijit/form/Button' data-dojo-attach-point='btnNewAlbum'>
+    	${STRING.ALBUM_CREATE_NEW}
+    </div>
+    <div data-dojo-type='dijit/form/Button' data-dojo-attach-point='btnDisplayAlbum'>
+    	${STRING.ALBUM_DISPLAY_LIST}
+    </div>
+    <hr />
+
+    <h1>${STRING.ALBUM_MY_ALBUMS}</h1>
+    <div class="polaroid" data-dojo-attach-point='holder'></div>
+    
+    <div data-dojo-attach-point='emptyList'>
+    	${STRING.ALBUM_EMPTY_ALBUMS_LIST}
+    </div>
+    
+    
+</div>

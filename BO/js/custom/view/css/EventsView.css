@@ -1,0 +1,128 @@
+.EventEditWidget{
+	overflow:auto;
+    width: 40%;
+    padding: 10px;
+    float:right;
+    background-color: white;
+    color: black;
+}
+
+.center{
+	overflow:auto;
+    width: 55%;
+    padding: 10px;
+    float:left;
+}
+
+ul{
+	list-style-type:none;
+}
+
+li{
+    /*float:left;*/
+	clear:both;
+}
+
+.dijitInputInner,
+.event_input{
+	width: 100%;
+}
+
+textarea.event_input{
+	height: 50px;
+}
+
+li.event_unit .event_titre{
+	float:left;
+}
+
+li.event_unit .poignee{
+	float:left;
+}
+
+li.event_unit.dojoDndItemOver{
+    background-color: rgb(0,176,233);
+}
+
+.bigicon{
+	width: 40px;
+	height: 40px;
+}
+
+.bigicon:hover{
+    cursor: pointer;
+}
+
+.icon{
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+	float: left;
+}
+
+label{
+	width: 50px;
+}
+
+.overlay{
+    opacity: 0.9;
+    background: url('/BO/img/overlay.png') 0 0 repeat;
+}
+
+.bouton{
+    color: blue;
+}
+
+.save {
+  background-image: url ('/BO/img/save.png') no-repeat;
+  cursor:pointer;
+ }
+
+.liste_upload{
+    width: 40%;
+    float: right;
+}
+
+.album_dropzone{
+    width: 40%;
+    border: 2px dashed #afafaf;
+    -moz-border-radius:7px;
+    -webkit-border-radius:7px;
+    border-radius:7px;
+    text-align: center;
+    color: #b5bcc7;/*#afafaf;*/
+    background-color: grey;
+    padding: 40px;
+    margin: 0 0 20px;
+}
+
+.main{
+	width: 100%;
+	margin-left:auto;
+	margin-right: auto;
+}
+
+.EventEdit_dropzone{
+    height: 56px;
+    border: 2px dashed #afafaf;
+    text-align: center;
+    color: #afafaf;
+    background-color: grey;
+    float:left;
+    padding: 40px;
+    margin: 0 0 20px;
+}
+
+.EventEdit_media_img{
+	float:left;
+    height: 300px;
+    margin-left: 10px;
+}
+
+.EventEdit_save{
+    background-image: url('/BO/img/save.png'); 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    height: 32px; 
+    width: 32px; 
+}

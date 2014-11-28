@@ -1,0 +1,26 @@
+<div style='background-color:white'>
+
+	<div 
+	style='width:30px'
+	data-dojo-attach-point='heures'
+	data-dojo-type="dijit/form/ValidationTextBox"
+    data-dojo-props="regExp:'\\d{2}', invalidMessage:'Heures invalides.'"
+    value='00'
+	></div>
+	H
+	<div 
+	style='width:30px'
+	data-dojo-attach-point='minutes'
+	data-dojo-type="dijit/form/ValidationTextBox"
+    data-dojo-props="regExp:'\\d{2}', invalidMessage:'Minutes invalides.'"
+    value='00'
+	></div>
+	
+	<input type='button' data-dojo-type='dijit/form/Button' data-dojo-attach-point="btn" label='Ok'/>
+
+	<div 
+	data-dojo-attach-point='calendar'
+	data-dojo-type='dijit/Calendar'></div>
+	
+	
+</div>
